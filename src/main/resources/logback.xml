@@ -1,0 +1,22 @@
+<!--
+   Betware default logback configuration
+  -->
+<configuration debug="false">
+
+<conversionRule conversionWord="mdc"
+                  converterClass="io.reactiverse.contextual.logging.LogbackConverter"/>
+
+ 
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n - %mdc{test:-ble}</pattern>
+    </encoder>
+
+  </appender>
+
+  <root level="${LOGGER_ROOT_LEVEL:-DEBUG}}">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>
