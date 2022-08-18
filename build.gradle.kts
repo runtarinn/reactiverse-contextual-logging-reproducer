@@ -33,7 +33,7 @@ dependencies {
   implementation("io.vertx:vertx-web")
 
 
-  implementation("io.reactiverse:reactiverse-contextual-logging:1.2.0-SNAPSHOT")
+  implementation("io.reactiverse:reactiverse-contextual-logging:1.1.0")
   
   implementation("org.slf4j:slf4j-api:1.7.35")
   implementation("ch.qos.logback:logback-core:1.2.11")
